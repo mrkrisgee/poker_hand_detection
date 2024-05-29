@@ -4,6 +4,25 @@
   <img src="https://github.com/mrkrisgee/poker_hand_detection/blob/main/gifs/poker_hand_example.gif" alt="Webcam Feed">
 </p>
 
+## Table of Contents
+- Overview
+- Features
+- Usage
+  - Training the Model
+      - Download the Playing Cards Image Dataset
+      - Organize Dataset in Google Drive
+      - Train the Model
+      - Retrieve and Download the Best Model
+  - Making Real-time Predictions
+      - Prerequisites
+      - Create a Virtual Environment
+      - Clone the Repository
+      - Move and Rename the Trained Model
+      - Install Necessary Packages
+      - Download CUDA Toolkit
+      - Run the Script
+- References    
+
 ## Overview
 
 This repository contains code for training a YOLOv8 model on a large dataset of playing cards to create a poker hand detection system using Python. It includes a setup for using a webcam live feed to make real-time predictions and identify poker hands.
@@ -51,7 +70,7 @@ Once training is complete, download the "best" model from:
 /runs/detect/train/weights/best.pt
 ```
 
-## 2. Making Real-time Predictions on your Webcam Feed
+## 2. Making Real-time Predictions
 
 ### Prerequisites
 
@@ -95,7 +114,7 @@ If you have an NVIDIA GPU and want to utilize CUDA for acceleration, download an
 https://developer.nvidia.com/cuda-downloads
 ```
 
-### Run the Scripts
+### Run the Script
 
 To execute the poker_hand_detection script, run:
 
