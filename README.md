@@ -1,4 +1,4 @@
-<h1 align="center">Poker Hand Detection with YOLOv8 through webcam</h1>
+<h1 align="center">Real-time Poker Hand Detection with YOLOv8 via Webcam</h1>
 
 <p align="center">
   <img src="https://github.com/mrkrisgee/poker_hand_detection/blob/main/gifs/poker_hand_example.gif" alt="Webcam Feed">
@@ -6,11 +6,18 @@
 
 ## Overview
 
-This repository contains code for training a large dataset of playing cards with YOLOv8, creating a poker hand detection system with python and then using the webcam live feed to make real-time predictions and identifying what type of hand someone has.
+This repository contains code for training a YOLOv8 model on a large dataset of playing cards to create a poker hand detection system using Python. It includes a setup for using a webcam live feed to make real-time predictions and identify poker hands.
+
+## Features
+
+- Real-time detection of poker hands using a webcam.
+- Pre-trained YOLOv8 model for quick setup.
+- Easy-to-follow training process for custom datasets.
+- Integration with CUDA for accelerated performance.
 
 ## Usage
 
-**Note:** This step can be skipped and the provided model in the [`model/`](https://github.com/mrkrisgee/poker_hand_detection/tree/main/model) directory can be used instead.
+You can skip the training steps and use the pre-trained model provided in the [model/](https://github.com/mrkrisgee/poker_hand_detection/tree/main/model) directory.
 
 ## 1. Training the Model
 
@@ -26,7 +33,7 @@ https://universe.roboflow.com/augmented-startups/playing-cards-ow27d/dataset/4/d
 
 Add the dataset to your Google Drive with the following hierarchy:
 
-<img src="https://github.com/mrkrisgee/poker_hand_detection/blob/main/extras/gDrive_hierarchy.png" width="1346/6" height="794/6">
+<img src="https://github.com/mrkrisgee/poker_hand_detection/blob/main/extras/gDrive_hierarchy.png" width="673">
 
 ### Train the Model
 
@@ -38,8 +45,10 @@ https://github.com/mrkrisgee/poker_hand_detection/tree/main/train
 
 ### Retrieve and Download the Best Model
 
+Once training is complete, download the "best" model from:
+
 ```
-This will be saved in: `/runs/detect/train/weights/best.pt`
+/runs/detect/train/weights/best.pt
 ```
 
 ## 2. Making Real-time Predictions on your Webcam Feed
@@ -68,7 +77,7 @@ cd poker_hand_detection
 
 ### Move the Trained Model and Rename it
 
-Move the `best.pt` model to the `/poker_hand_detection/model/ directory` and rename it to `playingCards.pt`.
+Move the best.pt model to the /poker_hand_detection/model/ directory and rename it to playingCards.pt.
 
 ### Install Necessary Packages
 
