@@ -42,7 +42,7 @@ https://github.com/mrkrisgee/poker_hand_detection/tree/main/train
 This will be saved in: `/runs/detect/train/weights/best.pt`
 ```
 
-## 2. Making Predictions on your Webcam Feed
+## 2. Making Real-time Predictions on your Webcam Feed
 
 ### Prerequisites
 
