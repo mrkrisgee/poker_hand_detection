@@ -10,6 +10,8 @@ This repository contains code for training a large dataset of playing cards with
 
 ## Usage
 
+**Note:** This step can be skipped and the provided model in the [`model/`](https://github.com/mrkrisgee/poker_hand_detection/tree/main/model) directory can be used instead.
+
 ## 1. Training the Model
 
 ### Download the Playing Cards Image Dataset
@@ -24,14 +26,14 @@ https://universe.roboflow.com/augmented-startups/playing-cards-ow27d/dataset/4/d
 
 Add the dataset to your Google Drive with the following hierarchy:
 
-<img src="https://github.com/mrkrisgee/PPE_detection/blob/main/extras/gDrive.png" width="608/2" height="416/2">
+<img src="https://github.com/mrkrisgee/poker_hand_detection/blob/main/extras/gDrive_hierarchy.png" width="1346/6" height="794/6">
 
 ### Train the Model
 
 Download and run the training notebook:
 
 ```
-https://github.com/mrkrisgee/PPE_detection/blob/main/train_construction_site_image_dataset.ipynb
+https://github.com/mrkrisgee/poker_hand_detection/tree/main/train
 ```
 
 ### Retrieve and Download the Best Model
@@ -40,7 +42,7 @@ https://github.com/mrkrisgee/PPE_detection/blob/main/train_construction_site_ima
 This will be saved in: `/runs/detect/train/weights/best.pt`
 ```
 
-## 2. Making Predictions on Videos
+## 2. Making Predictions on your Webcam Feed
 
 ### Prerequisites
 
@@ -64,9 +66,9 @@ git clone https://github.com/mrkrisgee/poker_hand_detection.git
 cd poker_hand_detection
 ```
 
-### Move the Trained Model
+### Move the Trained Model and Rename it
 
-Move the `best.pt` model to the `/PPE_detection/model/ directory`.
+Move the `best.pt` model to the `/poker_hand_detection/model/ directory` and rename it to `playingCards.pt`.
 
 ### Install Necessary Packages
 
@@ -86,8 +88,14 @@ https://developer.nvidia.com/cuda-downloads
 
 ### Run the Scripts
 
-To execute the PPE detection script, run:
+To execute the poker_hand_detection script, run:
 
 ```
-python PPE_detection.py
+poker_hand_detector.py
 ```
+
+## References
+
+- [Ultralytics YOLOv8](https://github.com/ultralytics/ultralytics): YOLOv8 is a real-time object detection model developed by Ultralytics.
+- [Alex Bewley](https://github.com/abewley/sort): For providing the SORT (Simple Online and Realtime Tracking) algorithm used for object tracking.
+- [Murtaza Hassan](https://github.com/murtazahassan): For his comprehensive Object Detection 101 course
