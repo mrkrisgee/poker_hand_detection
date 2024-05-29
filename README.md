@@ -5,23 +5,23 @@
 </p>
 
 ## Table of Contents
-- Overview
-- Features
-- Usage
-  - Training the Model
-      - Download the Playing Cards Image Dataset
-      - Organize Dataset in Google Drive
-      - Train the Model
-      - Retrieve and Download the Best Model
-  - Making Real-time Predictions
-      - Prerequisites
-      - Create a Virtual Environment
-      - Clone the Repository
-      - Move and Rename the Trained Model
-      - Install Necessary Packages
-      - Download CUDA Toolkit
-      - Run the Script
-- References    
+- [Overview](https://github.com/mrkrisgee/poker_hand_detection/blob/main/README.md#overview)
+- [Features](https://github.com/mrkrisgee/poker_hand_detection/blob/main/README.md#features)
+- [Usage](https://github.com/mrkrisgee/poker_hand_detection/blob/main/README.md#usage)
+  - [Training the Model](https://github.com/mrkrisgee/poker_hand_detection/blob/main/README.md#1-training-the-model)
+      - [Download the Playing Cards Image Dataset](https://github.com/mrkrisgee/poker_hand_detection/blob/main/README.md#download-the-playing-cards-image-dataset)
+      - [Organize Dataset in Google Drive](https://github.com/mrkrisgee/poker_hand_detection/blob/main/README.md#organize-dataset-in-google-drive)
+      - [Train the Model](https://github.com/mrkrisgee/poker_hand_detection/blob/main/README.md#train-the-model)
+      - [Retrieve and Download the Best Model](https://github.com/mrkrisgee/poker_hand_detection/blob/main/README.md#retrieve-and-download-the-best-model)
+  - [Making Real-time Predictions](https://github.com/mrkrisgee/poker_hand_detection/blob/main/README.md#2-making-real-time-predictions)
+      - [Prerequisites](https://github.com/mrkrisgee/poker_hand_detection/blob/main/README.md#prerequisites)
+      - [Create a Virtual Environment](https://github.com/mrkrisgee/poker_hand_detection/blob/main/README.md#create-a-virtual-environment)
+      - [Clone the Repository](https://github.com/mrkrisgee/poker_hand_detection/blob/main/README.md#clone-the-repository)
+      - [Move and Rename the Trained Model](https://github.com/mrkrisgee/poker_hand_detection/blob/main/README.md#move-the-trained-model-and-rename-it)
+      - [Install Necessary Packages](https://github.com/mrkrisgee/poker_hand_detection/blob/main/README.md#install-necessary-packages)
+      - [Download CUDA Toolkit](https://github.com/mrkrisgee/poker_hand_detection/blob/main/README.md#download-cuda-toolkit)
+      - [Run the Script](https://github.com/mrkrisgee/poker_hand_detection/blob/main/README.md#run-the-script)
+- [References](https://github.com/mrkrisgee/poker_hand_detection/blob/main/README.md#references)    
 
 ## Overview
 
